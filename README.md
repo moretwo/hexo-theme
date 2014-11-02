@@ -1,49 +1,76 @@
 # mabao-theme  for hexo
-
-![Casper Hexo port](https://lh3.googleusercontent.com/-5doSM3lLMz4/UtDKTGB7U8I/AAAAAAAABwY/VrNrJP8RgKU/w808-h712-no/Oops%2521+Google+Chrome+could+not+connect+to+localhost-4000.jpg)
+![](https://raw.githubusercontent.com/moretwo/hexo-theme/master/theme.gif)
 
 [Ghost moretwo] hexo port, a really minimalist theme.
 Preview: [live demo](http://moretwo.github.io)
 
 ## Installation
+> 基于hexo 静态模版发布系统，fork hexo-theme-casper
+
+### update
+- 添加导航Nav
+- 添加字体图标
+- 修改样式style
+- 改进theme
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/kywk/hexo-theme-casper.git themes/casper
+$ git clone https://github.com/moretwo/hexo-theme.git
 ```
 
 ### Enable
-
-Modify `theme` setting in `_config.yml` to `casper`.
-
-### Update
-
-``` bash
-cd themes/casper
-git pull
 ```
+myblog/themes/mabao-theme
+```
+Modify `theme` setting in `_config.yml` to `casper`.
 
 
 ## Configuration
 
-``` yml
+``` 
 # config
-cover: //blog.ghost.org/content/images/2013/Nov/cover.png
-logo: //blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png
-bio: 'A designer, developer and entrepreneur. Spends his time travelling the world with a bag of kites. Likes journalism and publishing platforms.'
+cover: /img/img-bg.jpg
+logo: /img/logo.svg
+bio: 作为挨踢业的伪设计狮伪技术牛 搬过砖也种过地：爱看、爱听、爱玩儿、爱折腾、机械水电、泥瓦木匠啥都来
 
 # Content
 excerpt_link: Read More
 
+# Header  nav
+menu:
+  Home: /
+  Archive: /archive
+  Images: /images
+  Wiki: /wiki
+  Favorites: /favorites
+  Contact: /contact
+
+##Private: /private
+##nav.fonticon.css
+navclass:
+ Home: icon-home
+ Archive: icon-news
+ Images: icon-image
+ Wiki: icon-wiki
+ Favorites: icon-Favorites
+ Contact: icon-mail
+
+##Private: icon-lock
+rss: /atom.xml
+
 # Miscellaneous
-rss:
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
 ```
-- **cover** - Cover for index page.
-- **logo** - Your website logo.
-- **bio** - Descript yourself.
-- **rss** - RSS subscription link (change if using Feedburner)
-- **google_analytics** - Google Analytics id.
+
+
+
+
 
 ## Original Casper Copyright & License ##
 
