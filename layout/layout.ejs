@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<%- partial('casper/head') %>
+<!--<% if (typeof page.title == 'undefined') { %>
+<body class="home-template">
+<% } else { %>
+<body class="post-template">
+<% } %>-->
+<body class="home-template">
+<div id="perspective" class="perspective effect-movedown">
+  <div class="container">
+    <!-- wrapper -->
+    <div class="wrapper">
+
+      <%- partial('casper/header') %>
+      <%- body %>
+      <%- partial('casper/footer') %>
+      <%- partial('casper/after_all') %>
+
+  </div>
+</div>
+
+<nav  class="outer-nav top horizontal">
+<% for (var i in theme.menu){ %>
+          <a class="<%- theme.navclass[i]||'default' %>"  href="<%- url_for(theme.menu[i]) %>"><span><%= i %></span></a>
+<% } %>
+</nav>
+
+</div>
+</body>
+</html>
